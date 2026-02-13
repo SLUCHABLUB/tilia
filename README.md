@@ -32,7 +32,7 @@ The last column lists the Rosé Pine colour which the colour is based on.
 | _Red_                  | `#eb6f92` | `#b4637a` | Love           |
 | _Orange_               | `#ebbcba` | `#d7827e` | Rose           |
 | _Yellow_               | `#f6c177` | `#ea9d34` | Gold           |
-| _Green_                | `#c4a7e7` | `#907aa9` | Iris*          |
+| _Green_                | `#a7bf90` | `#818c53` | Iris*          |
 | _Cyan_                 | `#9ccfd8` | `#56949f` | Foam           |
 | _Blue_                 | `#31748f` | `#286983` | Pine           |
 | _Purple_               | `#c4a7e7` | `#907aa9` | Iris           |
