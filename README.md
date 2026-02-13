@@ -4,37 +4,53 @@ A UI theme based on [Rosé Pine](https://rosepinetheme.com).
 
 ## Colours
 
-There are two sets of colours, one for "light mode" and one for "dark mode".
+There are two sets of colours, one for "dark mode" and one for "light mode".
 Which one is considered default depends of the application being themed.
 
-The light colours is based on the [Rosé Pine Dawn colour scheme](https://rosepinetheme.com/palette)
-and the dark colours are based on the [main Rosé Pine colour scheme](https://rosepinetheme.com/palette).
+The dark colours are based on the [main Rosé Pine colour scheme](https://rosepinetheme.com/palette)
+and the light colours are based on the [Rosé Pine Dawn colour scheme](https://rosepinetheme.com/palette).
 
 The below table shows the colours used in the theme.
 Each colour is given a name with which it will be referred to by later.
 The colours are defined using sRGB hex-codes.
 The last column lists the Rosé Pine colour which the colour is based on.
 
-| Name                   | Light     | Dark      | Derived From    |
-| :--------------------: | :-------: | :-------: | :-------------: |
-| _Border_               | `#cecacd` | `#524f67` | Highlight High  |
-| _Text_                 | `#575279` | `#e0def4` | Text            |
-| _Primary Background_   | `#faf4ed` | `#191724` | Base            |
-| _Secondary Background_ | `#faf4ed` | `#191724` | Surface         |
-| _Tertiary Background_  | `#faf4ed` | `#191724` | Overlay         |
-|                        |           |           |                 |
-| _Red_                  | `#b4637a` | `#eb6f92` | Love            |
-| _Orange_               | `#d7827e` | `#ebbcba` | Rose            |
-| _Yellow_               | `#ea9d34` | `#f6c177` | Gold            |
-| _Green_                | `#818C53` | `#a7bf90` | Iris (inverted) |
-| _Cyan_                 | `#56949f` | `#9ccfd8` | Foam            |
-| _Blue_                 | `#286983` | `#31748f` | Pine            |
-| _Purple_               | `#907aa9` | `#c4a7e7` | Iris            |
+| Colour                 | Dark      | Light     | Derived from   |
+| :--------------------: | :-------: | :-------: | :------------: |
+| _Primary Background_   | `#191724` | `#faf4ed` | Base           |
+| _Secondary Background_ | `#1f1d2e` | `#fffaf3` | Surface        |
+| _Tertiary Background_  | `#26233a` | `#f2e9e1` | Overlay        |
+|                        |           |           |                |
+| _Hover_                | `#21202e` | `#f4ede8` | Highlight Low  |
+| _Selection_            | `#403d52` | `#dfdad9` | Highlight Med  |
+| _Border_               | `#524f67` | `#cecacd` | Highlight High |
+|                        |           |           |                |
+| _Disabled_             | `#6e6a86` | `#9893a5` | Muted          |
+| _Unimportant_          | `#908caa` | `#797593` | Subtle         |
+| _Text_                 | `#e0def4` | `#575279` | Text           |
+|                        |           |           |                |
+| _Red_                  | `#eb6f92` | `#b4637a` | Love           |
+| _Orange_               | `#ebbcba` | `#d7827e` | Rose           |
+| _Yellow_               | `#f6c177` | `#ea9d34` | Gold           |
+| _Green_                | `#c4a7e7` | `#907aa9` | Iris*          |
+| _Cyan_                 | `#9ccfd8` | `#56949f` | Foam           |
+| _Blue_                 | `#31748f` | `#286983` | Pine           |
+| _Purple_               | `#c4a7e7` | `#907aa9` | Iris           |
 
 _Background_ will be used to refer to either the _primary_ _secondary_ or _tertiary background_ colour depending on context.
 If an element is placed on a background image, the _primary background_ colour should be used.
 However, if an element is placed on an another element with the _primary_ or _secondary background_ colour, it should use the _secondary_ or _tertiary background_ respectively.
 Avoid nesting elements further.
+
+The derivation of _Green_ is explained below.
+
+### Usage
+
+> TODO
+
+### Derivation
+
+> TODO
 
 ### Code
 
