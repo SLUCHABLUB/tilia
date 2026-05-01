@@ -37,16 +37,19 @@ The last column lists the Rosé Pine colour which the colour is based on.
 | _Blue_                 | `#31748f` | `#286983` | Pine           |
 | _Purple_               | `#c4a7e7` | `#907aa9` | Iris           |
 
-_Background_ will be used to refer to either the _primary_ _secondary_ or _tertiary background_ colour depending on context.
-If an element is placed on a background image, the _primary background_ colour should be used.
-However, if an element is placed on an another element with the _primary_ or _secondary background_ colour, it should use the _secondary_ or _tertiary background_ respectively.
-Avoid nesting elements further.
-
 The derivation of _Green_ is explained below.
 
 ### Usage
 
-> TODO
+#### Foreground Colours
+
+The _text_ colour should be used for most text and icons. If the text or icon is not active, or somehow deselected, _unimportant_ should be used instead.
+
+#### Background Colours
+
+The primary background should be used for the primary background of a window.
+
+_Background_ will be used to refer to either the _primary_ _secondary_ or _tertiary background_ colour depending on context. If an element is placed on a background image, the _primary background_ colour should be used. However, if an element is placed on an another element with the _primary_ or _secondary background_ colour, it should use the _secondary_ or _tertiary background_ respectively. Avoid nesting elements further.
 
 ### Derivation
 
@@ -79,8 +82,8 @@ The text needs to be put inside a box.
 A box is a rounded rectangle that contains other elements.
 
 Boxes should have:
-- A radius of 6 pixels.
-- A background with the _background_ colour.
+- A corner radius of 6 pixels.
+- A background with the appropriate _background_ colour.
 - A border with a thickness of 2 pixels.
 
 The colour of the border can be determined from the below table.
