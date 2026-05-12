@@ -1,11 +1,10 @@
 # Tilia
 
-A UI theme based on [Rosé Pine](https://rosepinetheme.com).
+A design language based on [Rosé Pine](https://rosepinetheme.com).
 
 ## Colours
 
 There are two sets of colours, one for "dark mode" and one for "light mode".
-Which one is considered default depends of the application being themed.
 
 The dark colours are based on the [main Rosé Pine colour scheme](https://rosepinetheme.com/palette)
 and the light colours are based on the [Rosé Pine Dawn colour scheme](https://rosepinetheme.com/palette).
@@ -37,7 +36,7 @@ The last column lists the Rosé Pine colour which the colour is based on.
 | _Blue_                 | `#31748f` | `#286983` | Pine           |
 | _Purple_               | `#c4a7e7` | `#907aa9` | Iris           |
 
-The derivation of _Green_ is explained below.
+*The derivation of _Green_ is explained below.
 
 ### Usage
 
@@ -51,6 +50,8 @@ The primary background should be used for the primary background of a window.
 
 _Background_ will be used to refer to either the _primary_ _secondary_ or _tertiary background_ colour depending on context. If an element is placed on a background image, the _primary background_ colour should be used. However, if an element is placed on an another element with the _primary_ or _secondary background_ colour, it should use the _secondary_ or _tertiary background_ respectively. Avoid nesting elements further.
 
+<!-- TODO: What to do for popups? -->
+
 ### Derivation
 
 > TODO
@@ -62,8 +63,8 @@ In this repository however, you will find the specification of the _Tilia Arrow_
 
 ## Elements
 
+<!-- TODO: Is logical pixels the best way? -->
 Sizing will be specified in _logical pixels_, henceforth referred to as "pixels".
-For reference, this theme was created on a laptop with ca. 100 pixels per inch.
 
 ### Background
 
@@ -74,7 +75,7 @@ The wallpaper should match set of colours chosen.
 
 ### Text
 
-Do not put text directly on a wallpaper.
+Do not put text directly on an image.
 The text needs to be put inside a box.
 
 ### Boxes
@@ -109,7 +110,12 @@ The font used for text should be the [JetBrains Mono Nerd Font](https://github.c
 Where a monospace font is needed, such as in text editors, [JetBrains Mono Nerd Font _Mono_](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono) ought to be used.
 The variant with ligatures should be used unless there is a good reason not to.
 
-TODO: specify text sizes
+### Sizes
+
+<!-- TODO: Specify more text sizes. -->
+<!-- TODO: Is this the best way to do sizing? -->
+
+Text should have a font size of 13 pt.
 
 ## Recommendations
 
