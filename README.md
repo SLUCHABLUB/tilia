@@ -48,7 +48,7 @@ The _text_ colour should be used for most text and icons. If the text or icon is
 
 The primary background should be used for the primary background of a window.
 
-_Background_ will be used to refer to either the _primary_ _secondary_ or _tertiary background_ colour depending on context. If an element is placed on a background image, the _primary background_ colour should be used. However, if an element is placed on an another element with the _primary_ or _secondary background_ colour, it should use the _secondary_ or _tertiary background_ respectively. Avoid nesting elements further.
+_Background_ will be used to refer to either the _primary_ _secondary_ or _tertiary background_ colour depending on context. If an element is placed on a background image, the _primary background_ colour should be used. However, if an element is placed on another element with the _primary_ or _secondary background_ colour, it should use the _secondary_ or _tertiary background_ respectively. Avoid nesting elements further.
 
 <!-- TODO: What to do for popups? -->
 
@@ -68,7 +68,7 @@ Sizing will be specified in _logical pixels_, henceforth referred to as "pixels"
 
 ### Background
 
-See [the wallper read-me](wallpapers/README.md)
+See [the wallpaper read-me](wallpapers.md)
 
 Depending on the application, the primary background may either have the _primary background_ colour or be one of the wallpapers in the `wallpapers` directory.
 The wallpaper should match set of colours chosen.
@@ -89,7 +89,7 @@ Boxes should have:
 
 The colour of the border can be determined from the below table.
 
-| Colour    | If the box or it's contained element...                                         |
+| Colour    | If the box or its contained element...                                          |
 | :-------: | :------------------------------------------------------------------------------ |
 | _Purple_  | is _selected_ or _active_ (only if it can be _deselected_ or _deactivated_).    |
 | _Red_     | represents an error or severe warning.                                          |
@@ -98,6 +98,7 @@ The colour of the border can be determined from the below table.
 | _Cyan_    | 's state is "good", but not as "good" as _Green_.                               |
 | _Green_   | 's state is "good".                                                             |
 | _Border_  | does not have state.                                                            |
+
 
 _Orange_ and _Cyan_ should only be used if extra granularity is needed.
 

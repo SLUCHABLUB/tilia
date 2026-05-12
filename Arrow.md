@@ -2,7 +2,7 @@
 
 ## Tokens
 
-Colours should be distributed according to the table bellow.
+Colours should be distributed according to the table below.
 
 | Colour        | Token Kind                                                 | Example(s)            |
 | :------------ | :--------------------------------------------------------- | :-------------------- |
@@ -27,7 +27,7 @@ Note that all foreground colours must be accompanied by their respective backgro
 ## File colours
 
 Files and directories should also be coloured.
-Each segment in a path should be coloured differently according to the table bellow.
+Each segment in a path should be coloured differently according to the table below.
 In code it is likely to become messy if all paths are coloured so there it generally recommended to colour them as if they were normal strings.
 However, in the output of commands such as `ls`, colouring paths can be informative.
 
@@ -51,10 +51,10 @@ However, in the output of commands such as `ls`, colouring paths can be informat
 
 ## Version control
 
-"Concepts" in version control should be coloured according to the table bellow.
+"Concepts" in version control should be coloured according to the table below.
 
 | Colour    | Concept                                                   |
 | :-------- | :-------------------------------------------------------- |
 | _Red_     | deletion, removal                                         |
-| _Orange_  | modification, simultaneous removal and deletion, renaming |
+| _Orange_  | modification, simultaneous addition and removal, renaming |
 | _Green_   | addition                                                  |
