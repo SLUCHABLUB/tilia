@@ -114,7 +114,7 @@ The variant with ligatures should be used unless there is a good reason not to.
 ### Sizes
 
 <!-- TODO: Specify more text sizes. -->
-<!-- TODO: Is this the best way to do sizing? -->
+<!-- TODO: Find a better wat to specify text sizes. -->
 
 Text should have a font size of 13 pt.
 
