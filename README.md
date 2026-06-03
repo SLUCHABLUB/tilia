@@ -47,7 +47,6 @@ The last column lists the Rosé Pine colour which the colour is based on.
 | _Background Blue_      | `#1d1f2e` | `#e5e6e2` | Base & Pine    |
 | _Background Purple_    | `#272335` | `#efe7e6` | Base & Iris    |
 
-
 *The derivation of _Green_ is explained below.
 
 ### Usage
@@ -61,6 +60,8 @@ The _text_ colour should be used for most text and icons. If the text or icon is
 The primary background should be used for the primary background of a window.
 
 _Background_ will be used to refer to either the _primary_ _secondary_ or _tertiary background_ colour depending on context. If an element is placed on a background image, the _primary background_ colour should be used. However, if an element is placed on another element with the _primary_ or _secondary background_ colour, it should use the _secondary_ or _tertiary background_ respectively. Avoid nesting elements further.
+
+If the foreground (text or icon) colour is one of the "rainbow" colours, and light mode is used, the background should use that colours associated background colour.
 
 <!-- TODO: What to do for popups? -->
 
