@@ -13,8 +13,8 @@ Colours should be distributed according to the table below.
 | _Orange_      | keywords, escape characters in strings, certain operators* | `struct`, `\n`        |
 | _Yellow_      | comments                                                   | `// commentary`       |
 | _Green_       | strings                                                    | `"text"`, `'E'`       |
-| _Cyan_        | functions (including macros)                               | `printf`, `println!`  |
-| _Blue_        | other literals                                             | `42`, `6.28`, `false` |
+| _Cyan_        | other literals                                             | `42`, `6.28`, `false` |
+| _Blue_        | functions (including macros)                               | `printf`, `println!`  |
 | _Purple_      | types                                                      | `String`              |
 
 *Most operators should use the _Unimportant_ colour.
