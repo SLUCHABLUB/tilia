@@ -4,18 +4,18 @@
 
 Colours should be distributed according to the table below.
 
-| Colour        | Token Kinds                                                | Examples                                   |
-| :------------ | :--------------------------------------------------------- | :----------------------------------------- |
-| _Text_        | miscellaneous tokens                                       | `foo`                                      |
-| _Unimportant_ | operators*, brackets, documentation                        | `+`, `.`, `()`, `{}`, `/// documentation`  |
-|               |                                                            |                                            |
-| _Red_         | erroneous tokens                                           |                                            |
-| _Orange_      | keywords, escape characters in strings, certain operators* | `struct`, `\n`                             |
-| _Yellow_      | comments                                                   | `// commentary`                            |
-| _Green_       | string and character literals                              | `"text"`, `'E'`                            |
-| _Cyan_        | other literals                                             | `42`, `6.28`, `false`                      |
-| _Blue_        | functions (including macros), URLs                         | `printf`, `println!`                       |
-| _Purple_      | types                                                      | `String`, `u8`                             |
+| Colour        | Token Kinds                                                | Examples                                  |
+| :------------ | :--------------------------------------------------------- | :---------------------------------------- |
+| _Text_        | miscellaneous tokens                                       | `foo`                                     |
+| _Unimportant_ | operators*, brackets, documentation                        | `+`, `.`, `()`, `{}`, `/// documentation` |
+|               |                                                            |                                           |
+| _Red_         | erroneous tokens                                           |                                           |
+| _Orange_      | keywords, escape characters in strings, certain operators* | `struct`, `\n`                            |
+| _Yellow_      | comments                                                   | `// commentary`                           |
+| _Green_       | string and character literals                              | `"text"`, `'E'`                           |
+| _Cyan_        | other literals                                             | `42`, `6.28`, `false`                     |
+| _Blue_        | functions, macros, preprocessor directives, URLs           | `printf`, `println!`, `#include`          |
+| _Purple_      | types                                                      | `String`, `u8`                            |
 
 *Most operators should use the _Unimportant_ colour.
 However, certain important/noteworthy operators should use the _Orange_ colour.
