@@ -74,7 +74,35 @@ On any _background_, the hover colour is obtained by interpolating 50 % of the w
 
 ### Derivation
 
-> TODO
+#### Green
+
+Rosé Pine has no green colour, so _Green_ is derived in the [Oklab](https://bottosson.github.io/posts/oklab) colour space.
+It has the same lightness as _Purple_ and its _a_ and _b_ components are those of the _primary background_ minus those of _Purple_.
+This makes it roughly complementary to _Purple_.
+
+#### Associated Background Colours
+
+The background associated with a rainbow colour depends on which _background_ it is placed on.
+In light mode it is obtained by interpolating 10 % of the way from the _background_ to the rainbow colour in Oklab.
+In dark mode it is the _background_ itself.
+
+#### Tints
+
+<!-- TODO: Implement tints in the CLI. -->
+
+Some elements, such as lines in a diff or search results, need a background that is coloured by a rainbow colour while still being readable.
+Such a background is called a _tint_.
+A tint is obtained by interpolating in Oklab from the _background_ to the rainbow colour, in the same way as the associated background colours.
+Unlike associated background colours, tints are used in both light and dark mode.
+
+| Strength | Interpolation | Used For                                                    |
+| :------- | :-----------: | :---------------------------------------------------------- |
+| Weak     | 20 %          | whole lines, such as added lines                            |
+| Strong   | 40 %          | parts of lines, such as added words, and search results     |
+
+Tints are not elements and do not count towards the nesting of backgrounds.
+An element placed on a tint should treat the tint as its _background_.
+For example, a token placed on a tinted line should have its associated background derived from the tint.
 
 ### Code
 
@@ -83,7 +111,6 @@ In this repository however, you will find the specification of the _Tilia Arrow_
 
 ## Elements
 
-<!-- TODO: Is logical pixels the best way? -->
 Sizing will be specified in _logical pixels_, henceforth referred to as "pixels".
 
 ### Background
@@ -91,7 +118,7 @@ Sizing will be specified in _logical pixels_, henceforth referred to as "pixels"
 See [the wallpaper read-me](wallpapers.md)
 
 Depending on the application, the primary background may either have the _primary background_ colour or be one of the wallpapers in the `wallpapers` directory.
-The wallpaper should match set of colours chosen.
+The wallpaper should match the set of colours chosen.
 
 ### Text
 
@@ -109,20 +136,26 @@ Boxes should have:
 
 The colour of the border can be determined from the below table.
 
-| Colour    | If the box or its contained element...                                          |
-| :-------: | :------------------------------------------------------------------------------ |
-| _Purple_  | is _selected_ or _active_ (only if it can be _deselected_ or _deactivated_).    |
-| _Red_     | represents an error or severe warning.                                          |
-| _Orange_  | represents a warning of severity between _Yellow_ and _Red_.                    |
-| _Yellow_  | represents a warning.                                                           |
-| _Cyan_    | 's state is "good", but not as "good" as _Green_.                               |
-| _Green_   | 's state is "good".                                                             |
-| _Border_  | does not have state.                                                            |
+| Colour    | If the box or its contained element...                                   |
+| :-------: | :----------------------------------------------------------------------- |
+| _Purple_  | is _selected_, _active_, or _focused_ (only if it can lose that state*). |
+| _Red_     | represents an error or severe warning.                                   |
+| _Orange_  | represents a warning of severity between _Yellow_ and _Red_.             |
+| _Yellow_  | represents a warning.                                                    |
+| _Cyan_    | 's state is "good", but not as "good" as _Green_.                        |
+| _Green_   | 's state is "good".                                                      |
+| _Border_  | does not have state.                                                     |
+
+*A box that is dismissed when it loses focus, such as a launcher, counts as being able to lose that state.
 
 _Orange_ and _Cyan_ should only be used if extra granularity is needed.
 
 Boxes should have at least 6 pixels of space between them.
 If the space is greater than 6 pixels it should be because the boxes are aligned differently.
+
+Boxes should have at least 6 pixels of padding between their border and their contents.
+
+<!-- TODO: Specify the horizontal padding of boxes containing text. Waybar uses 14 pixels. -->
 
 ## Text
 
