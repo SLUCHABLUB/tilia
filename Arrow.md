@@ -58,3 +58,5 @@ However, in the output of commands such as `ls`, colouring paths can be informat
 | _Red_     | deletion, removal                                         |
 | _Orange_  | modification, simultaneous addition and removal, renaming |
 | _Green_   | addition                                                  |
+
+> TODO: Background colours here.
