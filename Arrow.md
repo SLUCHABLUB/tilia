@@ -46,6 +46,12 @@ Certain tokens should also be given certain other styling according to the table
     Labels such as `'loop` in Rust, `error:` in C or `::continue::` in Lua can be seen as values at compile time.
     They can be passed to keywords or other constructs to represent "values" (positions or lifetimes in the code).
     As such they should be highlighted as other miscellaneous literals with _Cyan_.
+- Enum variants
+    All variants of an enum should have the same colour.
+    In languages where variants can be instantiated (such as Rust), they are type-adjacent and should be _Purple_.
+    In languages where variants are only named values (such as C or Java), they are more akin to literals and should be _Cyan_.
+    This is best effort since highlighters may not be able to tell the languages' variants apart from other tokens.
+    Prefer _Purple_ to _Cyan_ if no distinction can be made.
 
 ## File colours
 
