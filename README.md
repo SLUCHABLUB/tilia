@@ -59,7 +59,7 @@ _Background_ will be used to refer to either the _primary_, _secondary_, or _ter
 
 If the foreground (text or icon) colour is one of the "rainbow" colours, and light mode is used, the background should use that colours associated background colour.
 
-<!-- TODO: What to do for popups? -->
+Popups, such as menus, tooltips, notifications, and launchers, should use the _tertiary background_ regardless of what they are placed on.
 
 If an element is hovered, it should get the _Hover_ colour as it's background.
 If an element is "selected", it should get the selection colour as it's background.
