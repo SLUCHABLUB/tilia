@@ -27,6 +27,11 @@ When the caret is placed on a bracket the matching bracket should naturally be h
 
 The most appropriate colour would be _Border_ since they segment parts of the text area.
 
+## Whitespace
+
+Markers for whitespace (such as hard tabs or trailing spaces) should use _Disabled_.
+They are not intractable and less important than "unimportant".
+
 ## Arrow Specifics
 
 ### Searching
