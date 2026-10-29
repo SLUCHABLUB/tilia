@@ -56,6 +56,30 @@ On any _background_, the hover colour is obtained by interpolating 50 % of the w
 
 > TODO
 
+#### Associated Background Colours
+
+The background associated with a rainbow colour depends on which _background_ it is placed on.
+In light mode it is obtained by interpolating 10 % of the way from the _background_ to the rainbow colour in Oklab.
+In dark mode it is the _background_ itself.
+
+#### Tints
+
+<!-- TODO: Implement tints in the CLI. -->
+
+Some elements, such as lines in a diff or search results, need a background that is coloured by a rainbow colour while still being readable.
+Such a background is called a _tint_.
+A tint is obtained by interpolating in Oklab from the _background_ to the rainbow colour, in the same way as the associated background colours.
+Unlike associated background colours, tints are used in both light and dark mode.
+
+| Strength | Interpolation | Used For                                                    |
+| :------- | :-----------: | :---------------------------------------------------------- |
+| Weak     | 20 %          | whole lines, such as added lines                            |
+| Strong   | 40 %          | parts of lines, such as added words, and search results     |
+
+Tints are not elements and do not count towards the nesting of backgrounds.
+An element placed on a tint should treat the tint as its _background_.
+For example, a token placed on a tinted line should have its associated background derived from the tint.
+
 ### Code
 
 Tilia, as opposed to Rosé Pine, does not specify what colours to use for what kinds of tokens in code.
