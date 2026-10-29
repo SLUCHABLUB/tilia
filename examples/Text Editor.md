@@ -17,7 +17,7 @@ All lines that have carets on them should have the _Hover_ colour. This is becau
 
 ## Selection
 
-Selected text should naturally have the _Selection_ colour as it's background and the foreground should remain _Text_.
+Selected text should naturally have the _Selection_ colour as its background and the foreground should remain _Text_.
 
 ## Brackets
 
