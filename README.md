@@ -1,4 +1,3 @@
-
 <!-- THIS FILE IS AUTO GENERATED -->
 
 # Tilia
@@ -39,13 +38,7 @@ The last column lists the Rosé Pine colour which the colour is based on.
 | _Blue_                 | `#31748f` | `#286983` | Pine           |
 | _Purple_               | `#c4a7e7` | `#907aa9` | Iris           |
 |                        |           |           |                |
-| _Background Red_       | `#2b202e` | `#f4e5e1` | Base & Love    |
-| _Background Orange_    | `#2a2531` | `#f7e8e1` | Base & Rose    |
-| _Background Yellow_    | `#2b262d` | `#f9ecdd` | Base & Gold    |
-| _Background Green_     | `#25252e` | `#ede9dd` | Base & Iris*   |
-| _Background Cyan_      | `#252633` | `#eaeae5` | Base & Foam    |
-| _Background Blue_      | `#1d1f2e` | `#e5e6e2` | Base & Pine    |
-| _Background Purple_    | `#272335` | `#efe7e6` | Base & Iris    |
+
 
 *The derivation of _Green_ is explained below.
 
@@ -112,7 +105,6 @@ The colour of the border can be determined from the below table.
 | _Green_   | 's state is "good".                                                             |
 | _Border_  | does not have state.                                                            |
 
-
 _Orange_ and _Cyan_ should only be used if extra granularity is needed.
 
 Boxes should have at least 6 pixels of space between them.
@@ -127,7 +119,10 @@ The variant with ligatures should be used unless there is a good reason not to.
 ### Sizes
 
 <!-- TODO: Specify more text sizes. -->
-<!-- TODO: Find a better wat to specify text sizes. -->
+<!-- 
+    TODO: Figure out why e.g. Zed and Kitty display the same size differently.
+    Is there a better way to specify font sizes?
+-->
 
 Text should have a font size of 13 pt.
 

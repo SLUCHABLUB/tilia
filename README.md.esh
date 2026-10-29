@@ -1,4 +1,4 @@
-<%# We want the readme to be on GitHub which is why it is committed. %>
+<%# We want the readme to be on GitHub which is why it is committed. -%>
 <%= "<!-- THIS FILE IS AUTO GENERATED -->" %>
 
 # Tilia
@@ -18,6 +18,7 @@ The colours are defined using sRGB hex-codes.
 The last column lists the Rosé Pine colour which the colour is based on.
 
 <% tilia tabulate-colours --derivations --markdown %>
+<!-- TODO: Specify the background colours -->
 
 *The derivation of _Green_ is explained below.
 
@@ -84,7 +85,6 @@ The colour of the border can be determined from the below table.
 | _Green_   | 's state is "good".                                                             |
 | _Border_  | does not have state.                                                            |
 
-
 _Orange_ and _Cyan_ should only be used if extra granularity is needed.
 
 Boxes should have at least 6 pixels of space between them.
@@ -99,7 +99,10 @@ The variant with ligatures should be used unless there is a good reason not to.
 ### Sizes
 
 <!-- TODO: Specify more text sizes. -->
-<!-- TODO: Find a better wat to specify text sizes. -->
+<!-- 
+    TODO: Figure out why e.g. Zed and Kitty display the same size differently.
+    Is there a better way to specify font sizes?
+-->
 
 Text should have a font size of 13 pt.
 
