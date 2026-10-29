@@ -119,7 +119,8 @@ If the space is greater than 6 pixels it should be because the boxes are aligned
 ## Text
 
 The font used for text should be the [JetBrains Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono).
-Where a monospace font is needed, such as in text editors, [JetBrains Mono Nerd Font _Mono_](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono) ought to be used.
+Where text needs to be aligned, such as in code and terminals, [JetBrains Mono Nerd Font _Mono_](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono) ought to be used.
+Elsewhere the non-_Mono_ variant should be used, since its icons are allowed to be wider than other characters.
 The variant with ligatures should be used unless there is a good reason not to.
 
 ### Sizes
