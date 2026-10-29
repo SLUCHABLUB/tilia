@@ -39,6 +39,7 @@ The last column lists the Rosé Pine colour which the colour is based on.
 | _Purple_               | `#c4a7e7` | `#907aa9` | Iris           |
 |                        |           |           |                |
 
+<!-- TODO: Specify the background colours -->
 
 *The derivation of _Green_ is explained below.
 
