@@ -49,6 +49,8 @@ The last column lists the Rosé Pine colour which the colour is based on.
 
 The _text_ colour should be used for most text and icons. If the text or icon is not active, or somehow deselected, _unimportant_ should be used instead.
 
+_Disabled_ should be used for elements that cannot currently be interacted with.
+
 #### Background Colours
 
 The primary background should be used for the primary background of a window.
