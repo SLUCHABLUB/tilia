@@ -39,8 +39,6 @@ The last column lists the Rosé Pine colour which the colour is based on.
 | _Purple_               | `#c4a7e7` | `#907aa9` | Iris           |
 |                        |           |           |                |
 
-<!-- TODO: Specify the background colours -->
-
 *The derivation of _Green_ is explained below.
 
 ### Usage
@@ -70,8 +68,6 @@ _Border_ should be used for borders and other lines that separate elements.
 The _Hover_ colour in the table is only meant for the _primary background_.
 On any _background_, the hover colour is obtained by interpolating 50 % of the way from the _background_ to _Selection_ in Oklab.
 
-<!-- TODO: Add the hover colour for each background level to the CLI and the table. -->
-
 ### Derivation
 
 #### Green
@@ -87,8 +83,6 @@ In light mode it is obtained by interpolating 10 % of the way from the _backgrou
 In dark mode it is the _background_ itself.
 
 #### Tints
-
-<!-- TODO: Implement tints in the CLI. -->
 
 Some elements, such as lines in a diff or search results, need a background that is coloured by a rainbow colour while still being readable.
 Such a background is called a _tint_.
@@ -153,9 +147,7 @@ _Orange_ and _Cyan_ should only be used if extra granularity is needed.
 Boxes should have at least 6 pixels of space between them.
 If the space is greater than 6 pixels it should be because the boxes are aligned differently.
 
-Boxes should have at least 6 pixels of padding between their border and their contents.
-
-<!-- TODO: Specify the horizontal padding of boxes containing text. Waybar uses 14 pixels. -->
+Boxes should have at least 6 and 12 pixels of padding between their border and their contents in the vertical and horizontal directions respectively.
 
 ## Text
 
@@ -166,9 +158,7 @@ The variant with ligatures should be used unless there is a good reason not to.
 
 ### Sizes
 
-<!-- TODO: Specify more text sizes. -->
-
-Text should have a font size of 13 **pixels**.
+Text should have a font size of 13 **pixels**. If larger text is desired, such as for headings, font sizes that are powers of two times 13 pixels should be used.
 
 ## Recommendations
 
