@@ -43,7 +43,7 @@ Certain tokens should also be given certain other styling according to the table
     The surrounding punctuation (such as `#[]` or `@`) should be given the _Unimportant_ colour.
     However, the function/macro/keyword part of it should be highlighted as such.
 - Labels
-    Labels such as `'loop` in Rust, `error:` in C or `::continue::` in Lua can be sort of as values at compile time.
+    Labels such as `'loop` in Rust, `error:` in C or `::continue::` in Lua can be seen as values at compile time.
     They can be passed to keywords or other constructs to represent "values" (positions or lifetimes in the code).
     As such they should be highlighted as other miscellaneous literals with _Cyan_.
 
