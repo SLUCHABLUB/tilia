@@ -61,8 +61,16 @@ If the foreground (text or icon) colour is one of the "rainbow" colours, and lig
 
 Popups, such as menus, tooltips, notifications, and launchers, should use the _tertiary background_ regardless of what they are placed on.
 
-If an element is hovered, it should get the _Hover_ colour as it's background.
-If an element is "selected", it should get the selection colour as it's background.
+#### Highlight Colours
+
+_Hover_ should be used as the background of an element that is hovered by the cursor, a caret, or the like.
+_Selection_ should be used as the background of an element that is selected.
+_Border_ should be used for borders and other lines that separate elements.
+
+The _Hover_ colour in the table is only meant for the _primary background_.
+On any _background_, the hover colour is obtained by interpolating 50 % of the way from the _background_ to _Selection_ in Oklab.
+
+<!-- TODO: Add the hover colour for each background level to the CLI and the table. -->
 
 ### Derivation
 
