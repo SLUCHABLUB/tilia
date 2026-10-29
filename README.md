@@ -58,6 +58,9 @@ If the foreground (text or icon) colour is one of the "rainbow" colours, and lig
 
 <!-- TODO: What to do for popups? -->
 
+If an element is hovered, it should get the _Hover_ colour as it's background.
+If an element is "selected", it should get the selection colour as it's background.
+
 ### Derivation
 
 > TODO
