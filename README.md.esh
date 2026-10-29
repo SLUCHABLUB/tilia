@@ -54,7 +54,11 @@ On any _background_, the hover colour is obtained by interpolating 50 % of the w
 
 ### Derivation
 
-> TODO
+#### Green
+
+Rosé Pine has no green colour, so _Green_ is derived in the [Oklab](https://bottosson.github.io/posts/oklab) colour space.
+It has the same lightness as _Purple_ and its _a_ and _b_ components are those of the _primary background_ minus those of _Purple_.
+This makes it roughly complementary to _Purple_.
 
 #### Associated Background Colours
 
