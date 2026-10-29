@@ -4,7 +4,7 @@ How things should be highlighted in a typical text editor.
 
 ## Line numbers
 
-These usually sit on a panel to the left of the main text area. This are should naturally have the secondary background colour. The foreground should be _unimportant_ for most of the numbers since they don't need to draw attention. The number on the carets' line(s) should however have the normal text colour such that it stands out.
+These usually sit on a panel to the left of the main text area. This area should naturally have the secondary background colour. The foreground should be _unimportant_ for most of the numbers since they don't need to draw attention. The number on the lines with carets should however have the normal text colour such that it stands out.
 
 ## Caret Line
 
