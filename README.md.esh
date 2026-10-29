@@ -17,7 +17,8 @@ Each colour is given a name with which it will be referred to by later.
 The colours are defined using sRGB hex-codes.
 The last column lists the Rosé Pine colour which the colour is based on.
 
-<% tilia tabulate-colours --derivations --markdown %>
+<% tilia tabulate-colours --derivations --markdown -%>
+
 <!-- TODO: Specify the background colours -->
 
 *The derivation of _Green_ is explained below.
@@ -28,15 +29,28 @@ The last column lists the Rosé Pine colour which the colour is based on.
 
 The _text_ colour should be used for most text and icons. If the text or icon is not active, or somehow deselected, _unimportant_ should be used instead.
 
+_Disabled_ should be used for elements that cannot currently be interacted with.
+
 #### Background Colours
 
 The primary background should be used for the primary background of a window.
 
-_Background_ will be used to refer to either the _primary_ _secondary_ or _tertiary background_ colour depending on context. If an element is placed on a background image, the _primary background_ colour should be used. However, if an element is placed on another element with the _primary_ or _secondary background_ colour, it should use the _secondary_ or _tertiary background_ respectively. Avoid nesting elements further.
+_Background_ will be used to refer to either the _primary_, _secondary_, or _tertiary background_ colour depending on context. If an element is placed on a background image, the _primary background_ colour should be used. However, if an element is placed on another element with the _primary_ or _secondary background_ colour, it should use the _secondary_ or _tertiary background_ respectively. Avoid nesting elements further.
 
 If the foreground (text or icon) colour is one of the "rainbow" colours, and light mode is used, the background should use that colours associated background colour.
 
-<!-- TODO: What to do for popups? -->
+Popups, such as menus, tooltips, notifications, and launchers, should use the _tertiary background_ regardless of what they are placed on.
+
+#### Highlight Colours
+
+_Hover_ should be used as the background of an element that is hovered by the cursor, a caret, or the like.
+_Selection_ should be used as the background of an element that is selected.
+_Border_ should be used for borders and other lines that separate elements.
+
+The _Hover_ colour in the table is only meant for the _primary background_.
+On any _background_, the hover colour is obtained by interpolating 50 % of the way from the _background_ to _Selection_ in Oklab.
+
+<!-- TODO: Add the hover colour for each background level to the CLI and the table. -->
 
 ### Derivation
 
@@ -93,18 +107,15 @@ If the space is greater than 6 pixels it should be because the boxes are aligned
 ## Text
 
 The font used for text should be the [JetBrains Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono).
-Where a monospace font is needed, such as in text editors, [JetBrains Mono Nerd Font _Mono_](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono) ought to be used.
+Where text needs to be aligned, such as in code and terminals, [JetBrains Mono Nerd Font _Mono_](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono) ought to be used.
+Elsewhere the non-_Mono_ variant should be used, since its icons are allowed to be wider than other characters.
 The variant with ligatures should be used unless there is a good reason not to.
 
 ### Sizes
 
 <!-- TODO: Specify more text sizes. -->
-<!-- 
-    TODO: Figure out why e.g. Zed and Kitty display the same size differently.
-    Is there a better way to specify font sizes?
--->
 
-Text should have a font size of 13 pt.
+Text should have a font size of 13 **pixels**.
 
 ## Recommendations
 
