@@ -91,7 +91,6 @@ In this repository however, you will find the specification of the _Tilia Arrow_
 
 ## Elements
 
-<!-- TODO: Is logical pixels the best way? -->
 Sizing will be specified in _logical pixels_, henceforth referred to as "pixels".
 
 ### Background
