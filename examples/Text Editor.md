@@ -30,7 +30,7 @@ The most appropriate colour would be _Border_ since they segment parts of the te
 ## Whitespace
 
 Markers for whitespace (such as hard tabs or trailing spaces) should use _Disabled_.
-They are not intractable and less important than "unimportant".
+They are not interactable and less important than "unimportant".
 
 ## Arrow Specifics
 
