@@ -76,10 +76,12 @@ However, in the output of commands such as `ls`, colouring paths can be informat
 
 "Concepts" in version control should be coloured according to the table below.
 
-| Colour    | Concept                                                   |
-| :-------- | :-------------------------------------------------------- |
-| _Red_     | deletion, removal                                         |
-| _Orange_  | modification, simultaneous addition and removal, renaming |
-| _Green_   | addition                                                  |
+| Colour    | Concept                                                              |
+| :-------- | :------------------------------------------------------------------- |
+| _Red_     | deletion, removal                                                    |
+| _Orange_  | modification, simultaneous addition and removal, renaming, conflicts |
+| _Green_   | addition                                                             |
 
-> TODO: Background colours here.
+Lines that have been added or removed should have a weak tint of their colour.
+The parts of those lines that have changed should have a strong tint.
+See the derivation of tints in [the read-me](README.md#tints).
