@@ -3,7 +3,7 @@
 There is no definition of what a compliant wallpaper is.
 A wallpaper may be used so long as it adheres mostly to the Tilia colour scheme and looks coherent with the rest of the interface.
 
-Below you will find a selection of wallpapers that look good in the opinions of the authors'.
+Below you will find a selection of wallpapers that look good in the opinions of the authors.
 
 ## Dark
 
