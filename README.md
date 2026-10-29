@@ -125,12 +125,8 @@ The variant with ligatures should be used unless there is a good reason not to.
 ### Sizes
 
 <!-- TODO: Specify more text sizes. -->
-<!-- 
-    TODO: Figure out why e.g. Zed and Kitty display the same size differently.
-    Is there a better way to specify font sizes?
--->
 
-Text should have a font size of 13 pt.
+Text should have a font size of 13 **pixels**.
 
 ## Recommendations
 
