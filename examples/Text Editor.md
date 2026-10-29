@@ -6,6 +6,11 @@ How things should be highlighted in a typical text editor.
 
 These usually sit on a panel to the left of the main text area. This area should naturally have the secondary background colour. The foreground should be _unimportant_ for most of the numbers since they don't need to draw attention. The number on the lines with carets should however have the normal text colour such that it stands out.
 
+## Caret
+
+Carets should have the _Border_ colour.
+Like borders, they are thin lines that need to be visible without drawing attention away from the text.
+
 ## Caret Line
 
 All lines that have carets on them should have the _Hover_ colour. This is because a caret is the analogue of the cursor to the line is practically "hovered" by the caret.
