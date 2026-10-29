@@ -116,15 +116,17 @@ Boxes should have:
 
 The colour of the border can be determined from the below table.
 
-| Colour    | If the box or its contained element...                                          |
-| :-------: | :------------------------------------------------------------------------------ |
-| _Purple_  | is _selected_ or _active_ (only if it can be _deselected_ or _deactivated_).    |
-| _Red_     | represents an error or severe warning.                                          |
-| _Orange_  | represents a warning of severity between _Yellow_ and _Red_.                    |
-| _Yellow_  | represents a warning.                                                           |
-| _Cyan_    | 's state is "good", but not as "good" as _Green_.                               |
-| _Green_   | 's state is "good".                                                             |
-| _Border_  | does not have state.                                                            |
+| Colour    | If the box or its contained element...                                   |
+| :-------: | :----------------------------------------------------------------------- |
+| _Purple_  | is _selected_, _active_, or _focused_ (only if it can lose that state*). |
+| _Red_     | represents an error or severe warning.                                   |
+| _Orange_  | represents a warning of severity between _Yellow_ and _Red_.             |
+| _Yellow_  | represents a warning.                                                    |
+| _Cyan_    | 's state is "good", but not as "good" as _Green_.                        |
+| _Green_   | 's state is "good".                                                      |
+| _Border_  | does not have state.                                                     |
+
+*A box that is dismissed when it loses focus, such as a launcher, counts as being able to lose that state.
 
 _Orange_ and _Cyan_ should only be used if extra granularity is needed.
 
