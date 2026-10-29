@@ -98,7 +98,7 @@ Sizing will be specified in _logical pixels_, henceforth referred to as "pixels"
 See [the wallpaper read-me](wallpapers.md)
 
 Depending on the application, the primary background may either have the _primary background_ colour or be one of the wallpapers in the `wallpapers` directory.
-The wallpaper should match set of colours chosen.
+The wallpaper should match the set of colours chosen.
 
 ### Text
 
