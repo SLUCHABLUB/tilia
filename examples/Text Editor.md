@@ -36,6 +36,4 @@ They are not intractable and less important than "unimportant".
 
 ### Searching
 
-> TODO: Figure out a way to do backgrounds as with diff.
-
-Search results should be highlighted yellow to be accentuated.
+Search results should be highlighted with a strong _Yellow_ tint to be accentuated.
